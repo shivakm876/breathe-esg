@@ -16,7 +16,7 @@ function App() {
   }
 
   useEffect(() => {
-    fetchRecords()
+   
   }, [])
 
   const uploadSAP = async () => {
