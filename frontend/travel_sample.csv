@@ -1,0 +1,4 @@
+From,To,Transport Type,Distance
+DEL,BLR,Flight,1740
+BLR,HYD,Flight,500
+CHE,BLR,Train,350
