@@ -113,9 +113,7 @@ breathe-esg/
 ├── backend/
 │   ├── emissions/
 │   ├── config/
-│   ├── manage.py
-│   ├── MODEL.md
-│   └── DECISIONS.md
+│   └── manage.py
 │
 ├── frontend/
 │   ├── src/
@@ -125,6 +123,10 @@ breathe-esg/
 │   └── package.json
 │
 ├── README.md
+├── MODEL.md
+├── DECISIONS.md
+├── TRADEOFFS.md
+├── SOURCES.md
 └── .gitignore
 ```
 
@@ -135,19 +137,19 @@ breathe-esg/
 ## Upload APIs
 
 ### SAP Upload
-POST:
+
 ```bash
 /api/upload/sap/
 ```
 
 ### Utility Upload
-POST:
+
 ```bash
 /api/upload/utility/
 ```
 
 ### Travel Upload
-POST:
+
 ```bash
 /api/upload/travel/
 ```
@@ -157,13 +159,13 @@ POST:
 ## Record APIs
 
 ### Get Records
-GET:
+
 ```bash
 /api/records/
 ```
 
 ### Update Record Status
-POST:
+
 ```bash
 /api/records/<record_id>/status/
 ```
@@ -178,6 +180,8 @@ POST:
 cd backend
 ```
 
+---
+
 ## Step 2
 
 Create virtual environment:
@@ -185,6 +189,8 @@ Create virtual environment:
 ```bash
 python -m venv venv
 ```
+
+---
 
 ## Step 3
 
@@ -293,6 +299,16 @@ http://localhost:5173
 
 ---
 
+# Deployment
+
+Frontend:
+https://breathe-esg-fawn.vercel.app/
+
+Backend:
+https://breathe-esg-xfmb.onrender.com
+
+---
+
 # Sample Files
 
 Sample CSV files included:
@@ -308,13 +324,13 @@ Potential future enhancements:
 - OCR-based ingestion
 - AI anomaly detection
 - Authentication system
-- ESG analytics dashboard
 - PostgreSQL integration
-- Cloud deployment
+- Advanced ESG reporting
+- Role-based access control
 
 ---
 
 # Author
 
-Sivaganga km
+Sivaganga KM  
 B.Tech Computer Science Engineering
