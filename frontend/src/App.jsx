@@ -9,7 +9,7 @@ function App() {
   const fetchRecords = async () => {
 
     const res = await axios.get(
-      'http://127.0.0.1:8000/api/records/'
+      'https://breathe-esg-xfmb.onrender.com/api/records/'
     )
 
     setRecords(res.data)
@@ -33,7 +33,7 @@ function App() {
     try {
 
       await axios.post(
-        'http://127.0.0.1:8000/api/upload/sap/',
+        'https://breathe-esg-xfmb.onrender.com/api/upload/sap/',
         formData
       )
 
@@ -63,7 +63,7 @@ function App() {
     try {
 
       await axios.post(
-        'http://127.0.0.1:8000/api/upload/utility/',
+        'https://breathe-esg-xfmb.onrender.com/api/upload/utility/',
         formData
       )
 
@@ -93,7 +93,7 @@ function App() {
     try {
 
       await axios.post(
-        'http://127.0.0.1:8000/api/upload/travel/',
+        'https://breathe-esg-xfmb.onrender.com/api/upload/travel/',
         formData
       )
 
@@ -239,7 +239,7 @@ function App() {
                   onClick={async () => {
 
                     await axios.post(
-                      `http://127.0.0.1:8000/api/records/${r.id}/status/`,
+                      `https://breathe-esg-xfmb.onrender.com/api/records/${r.id}/status/`,
                       {
                         status: 'APPROVED'
                       }
@@ -260,7 +260,7 @@ function App() {
                   onClick={async () => {
 
                     await axios.post(
-                      `http://127.0.0.1:8000/api/records/${r.id}/status/`,
+                      `https://breathe-esg-xfmb.onrender.com/api/records/${r.id}/status/`,
                       {
                         status: 'REJECTED'
                       }
